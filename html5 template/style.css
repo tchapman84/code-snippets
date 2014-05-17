@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 15px;
+}
+
+p {
+	margin: 10px;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+/*Navigation*/
+
+nav {
+	background-color:#036;
+	height:30px;
+	padding-top:10px;
+}
+nav ul {
+	list-style-type: none;	
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	display: inline;	
+	
+}
+nav ul li a {
+	text-decoration: none;	
+	padding: .2em 1em .2em 1em;
+	background-color:#036;
+	color:#fff;
+}
+nav ul li a:hover {
+	background-color: #369;
+	color:#fff;
+}
+/*End of Navigation*/
+
+#main {
+	width: 700px;
+	float: left;
+}
+
+#sidebar {
+	width: 250px;
+	float: right;
+}
+
+/*Footer*/
+footer {
+	clear: both;
+	width:100%;
+}
+
+.footer-header {
+	width: 300px;
+	float: left;
+}
+
+.contact {
+	width: 300px;
+	float: right;
+	margin-top:10px;
+	text-align: right;
+}
+/*End of Footer*/
