@@ -48,6 +48,12 @@ ul li a {
   -o-transform:rotate(-6deg);
   -moz-transform:rotate(-6deg);
   
+  /*smooth transitions*/
+  
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  
 }
 
 /*Random tilting of the notes*/
@@ -58,6 +64,7 @@ ul li:nth-child(even) a{
   -moz-transform:rotate(4deg);
   position:relative;
   top:5px;
+  
 }
 ul li:nth-child(3n) a{
   -o-transform:rotate(-3deg);
@@ -65,6 +72,7 @@ ul li:nth-child(3n) a{
   -moz-transform:rotate(-3deg);
   position:relative;
   top:-5px;
+  
 }
 ul li:nth-child(5n) a{
   -o-transform:rotate(5deg);
@@ -91,6 +99,19 @@ ul li h2 {
 ul li p {
 	font-family: 'Indie Flower', cursive;
 	font-size:180%;
+}
+
+/* zooming the notes */
+
+ul li a:hover,ul li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
 }
 
 
